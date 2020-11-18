@@ -1,0 +1,57 @@
+/* slide persona */
+
+.carousel svg {
+	height: 90vh;
+}
+
+.carousel-control-prev-icon {
+	background-image: url('../icons/arrow_left.svg');
+}
+
+.carousel-control-next-icon {
+	background-image: url('../icons/arrow_right.svg');
+}
+
+@media(min-width: 768px) {
+    .carousel-caption{
+		bottom: 20%; 
+    }
+	ol.carousel-indicators {
+		transform: rotate(90deg);
+		bottom: 60%;
+        left: inherit;
+        right: -8%;
+	}
+	.carousel-indicators li {
+		display: flex;
+		width: 10px;
+		height: 10px;
+		border-radius: 70%;
+		background: transparent;
+		border: 2px solid white;
+		align-items: center;
+		justify-content: center;
+		margin: 0 10px;
+		border-radius: 50%;
+	}
+	.carousel-indicators li:before {
+		content: '';
+		width: 24px;
+		height: 24px;
+		background: transparent;
+		position: absolute;
+		display: block;
+		border-radius: 50%;
+		border: 1px solid white;
+	}
+	li.active {
+		background: white;
+	}
+}
+
+@media(min-width: 1300px) {
+    .carousel-caption{
+		bottom: 40%; 
+    }
+
+}
